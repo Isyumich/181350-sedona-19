@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Андрей Изюмов](https://up.htmlacademy.ru/adaptive/19/user/181350).
-* Наставник: `Неизвестно`.
+* Наставник: [Марина Удовенко] (https://htmlacademy.ru/profile/id7570).
 
 ---
 
