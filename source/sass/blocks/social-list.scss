@@ -1,0 +1,32 @@
+.social-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-list__item {
+  position: relative;
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+}
+
+.social-list__link {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.social-list__link--twitter {
+  content: url("../../img/icon-twitter.svg");
+}
+
+.social-list__link--youtube {
+  content: url("../../img/icon-youtube.svg");
+}
+
+.social-list__link--facebook {
+  content: url("../../img/icon-facebook.svg");
+}
