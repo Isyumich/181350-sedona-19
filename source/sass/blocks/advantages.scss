@@ -1,0 +1,124 @@
+.advantages {
+  text-transform: uppercase;
+  font-family: "PTSans", "Arial", sans-serif;
+}
+
+.advantages__heading {
+  margin: 0;
+  padding: 39px 27px 0 27px;
+  text-align: center;
+
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.advantages__description {
+  margin: 0;
+  padding: 28px 9px 27px 9px;
+  text-align: center;
+
+  font-size: 14px;
+  color: #333333;
+  line-height: 26px;
+}
+
+.advantages__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__item {
+  padding-top: 28px;
+  text-align: center;
+
+  background-color: #eeeeee;
+}
+
+.advantages__item:first-child,
+.advantages__item:nth-child(2) {
+  background-color: #81b3d2;
+}
+
+.advantages__item:first-child {
+  margin-bottom: 38px;
+  padding-top: 55px;
+}
+
+.advantages__item:nth-child(2) {
+  padding-top: 38px;
+}
+
+.advantages__item-heading {
+  margin: 0;
+  margin-bottom: 9px;
+
+  font-weight: bold;
+  color: #000000;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.advantages__item-number,
+.advantages__item-description {
+  margin: 0;
+  color: #333333;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.advantages__item-number {
+  margin-bottom: 15px;
+}
+
+.advantages__item-description {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 38px;
+}
+
+.advantages__item-image {
+  vertical-align: bottom;
+}
+
+.adnvantages__item-heading--white,
+.advantages__item-number--white,
+.advantages__item-description--white {
+  color: #ffffff;
+}
+
+.advantages__recommendations {
+  background-color: #ffffff;
+  list-style: none;
+  text-align: left;
+  padding-left: 70px;
+  padding-right: 19px;
+  padding-top: 35px;
+}
+
+.advantages__recommendations-item {
+  margin-bottom: 27px;
+}
+
+.advantages__recommendations-item:last-child {
+  margin-bottom: 0;
+}
+
+.advantages__recommendations-heading {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  color: #000000;
+}
+
+.advantages__recommendations-description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+}
