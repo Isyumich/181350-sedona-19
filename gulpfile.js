@@ -31,6 +31,7 @@ gulp.task("server", function () {
   });
 
   gulp.watch("source/sass/**/*.scss", gulp.series("css"));
+  gulp.watch("source/sass/*.scss", gulp.series("css"));
   gulp.watch("source/*.html").on("change", server.reload);
 });
 

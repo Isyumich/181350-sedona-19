@@ -1,6 +1,5 @@
 .main-nav {
-  font-family: "PTSans", "Arial", sans-serif;
-  background-color: #81b3d2;
+  background-color: $light-grey-blue;
 }
 
 .main-nav__list {
@@ -14,4 +13,10 @@
 
 .main-nav__toggle-off {
   position: absolute;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    background-color: #ffffff;
+  }
 }

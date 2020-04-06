@@ -1,6 +1,5 @@
 .advantages {
   text-transform: uppercase;
-  font-family: "PTSans", "Arial", sans-serif;
 }
 
 .advantages__heading {
@@ -18,7 +17,6 @@
   padding: 28px 9px 27px 9px;
   text-align: center;
 
-  font-size: 14px;
   color: #333333;
   line-height: 26px;
 }
@@ -32,13 +30,21 @@
 .advantages__item {
   padding-top: 28px;
   text-align: center;
-
   background-color: #eeeeee;
 }
 
 .advantages__item:first-child,
 .advantages__item:nth-child(2) {
-  background-color: #81b3d2;
+  background-color: white;
+}
+
+.advantages__item-wrapper-text {
+  background-color: #eeeeee;
+}
+
+.advantages__item-wrapper-text:first-child,
+.advantages__item-wrapper-text:nth-child(2) {
+  background-color: $light-grey-blue;
 }
 
 .advantages__item:first-child {
@@ -65,7 +71,6 @@
 .advantages__item-description {
   margin: 0;
   color: #333333;
-  font-size: 14px;
   line-height: 21px;
 }
 
@@ -118,7 +123,73 @@
 
 .advantages__recommendations-description {
   margin: 0;
-  font-size: 14px;
   line-height: 21px;
   color: #333333;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__heading,
+  .advantages__description {
+    padding-left: 139px;
+    padding-right: 139px;
+  }
+
+  .advantages__heading {
+    font-size: 21px;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .advantages__item:nth-child(n+3) {
+    max-width: 256px;
+    min-height: 256px;
+  }
+
+  .advantages__item:first-child,
+  .advantages__item:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantages__item-wrapper-text {
+    width: 256px;
+    min-height: 256px;
+  }
+
+  .advantages__item:nth-child(2) .advantages__item-image {
+    order: -1;
+  }
+
+  .advantages__item-image {
+    min-width: 512px;
+    height: 256px;
+  }
+
+  .advantages__recommendations {
+    display: flex;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .advantages__heading,
+  .advantages__description {
+    padding-left: 355px;
+    padding-right: 355px;
+  }
+
+  .advantages__item:nth-child(n+3) {
+    min-width: 400px;
+  }
+
+  .advantages__item-wrapper-text {
+    width: 400px;
+  }
+
+  .advantages__item-image {
+    min-width: 800px;
+  }
 }
