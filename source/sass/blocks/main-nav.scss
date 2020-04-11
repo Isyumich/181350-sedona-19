@@ -7,16 +7,48 @@
   padding: 0;
 }
 
-.main-nav__toggle-on {
+.main-nav__toggle {
   position: absolute;
 }
 
-.main-nav__toggle-off {
-  position: absolute;
+.main-nav__toggle--on {
+  content: "";
+  background-image: url("../../img/icon-cross.svg");
+  width: 23px;
+  height: 22px;
+  top: 5%;
+  right: 5%;
+}
+
+.main-nav__toggle--off {
+  content: "";
+  background-color: url("../../img/icon-cross.svg");
+  width: 23px;
+  height: 22px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5%;
+}
+
+.main-nav__list--hidden {
+  display: none;
+}
+
+.nepridumal {
+  height: 57px;
+  background-color: #ffffff;
 }
 
 @media (min-width: $tablet-width) {
   .main-nav {
     background-color: #ffffff;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .nepridumal {
+    display: none;
   }
 }

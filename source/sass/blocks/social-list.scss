@@ -1,8 +1,8 @@
 .social-list {
   display: flex;
   margin: 0;
-  padding: 0;
   list-style: none;
+  justify-content: space-between;
 }
 
 .social-list__item {
