@@ -31,7 +31,7 @@
     justify-content: space-between;
     align-items: center;
     padding-left: 8%;
-    padding-right: 8%;
+    padding-right: 12.5%;
     padding-top: 36px;
     padding-bottom: 36px;
   }
@@ -44,5 +44,12 @@
     padding: 0;
     margin: 0;
     width: 151px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .page-footer__wrapper {
+    padding-left: 10%;
+    padding-right: 13%;
   }
 }

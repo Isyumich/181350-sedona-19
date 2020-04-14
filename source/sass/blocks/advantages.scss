@@ -67,6 +67,7 @@
 }
 
 .advantages__item-number {
+  position: relative;
   margin-bottom: 15px;
 }
 
@@ -176,6 +177,7 @@
     font-size: 21px;
     padding-right: 19%;
     padding-left: 20%;
+    margin-bottom: 11px;
   }
 
   .advantages__item-description {
@@ -247,8 +249,8 @@
 @media (min-width: $desctop-width) {
   .advantages__heading,
   .advantages__description {
-    padding-left: 355px;
-    padding-right: 355px;
+    padding-left: 28%;
+    padding-right: 28%;
   }
 
   .advantages__item:nth-child(3) {
