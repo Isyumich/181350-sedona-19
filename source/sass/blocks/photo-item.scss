@@ -92,6 +92,8 @@
   }
 
   .photo-item__wrapper {
+    box-sizing: border-box;
+    padding-bottom: 17px;
     background-color: rgba(0, 0, 0, 0.3);
     position: absolute;
     bottom: 0;

@@ -44,7 +44,7 @@
 }
 
 .advantages__item:nth-child(3) {
-  padding-top: 36px;
+  padding-top: 39px;
   background-color: $light-grey-blue;
 }
 
@@ -161,6 +161,10 @@
     margin-bottom: 0;
   }
 
+  .advantages__item:nth-child(3) {
+    padding-top: 35px;
+  }
+
   .advantages__item:nth-child(n+4) {
     max-width: 33.33%;
     min-height: 256px;
@@ -177,7 +181,7 @@
     font-size: 21px;
     padding-right: 19%;
     padding-left: 20%;
-    margin-bottom: 11px;
+    margin-bottom: 10px;
   }
 
   .advantages__item-description {
