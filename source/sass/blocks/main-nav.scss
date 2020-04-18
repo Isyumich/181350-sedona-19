@@ -10,7 +10,14 @@
   }
 
   .main-nav__toggle {
+    outline: none;
+    margin: 0;
+    padding: 0;
     position: absolute;
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   .main-nav__toggle--on {

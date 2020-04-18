@@ -83,8 +83,27 @@
   padding-right: 10%;
 }
 
-.advantages__item-image {
-  vertical-align: bottom;
+.advantages__item-picture {
+  width: 320px;
+  height: 260px;
+  background-image: url("../../img/main-city-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.advantages__item:nth-child(3) .advantages__item-picture {
+  background-image: url("../../img/main-bridge-mobile@1x.jpg");
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .advantages__item-picture {
+    background-image: url("../../img/main-city-mobile@2x.jpg");
+  }
+
+  .advantages__item:nth-child(3) .advantages__item-picture {
+    background-image: url("../../img/main-bridge-mobile@2x.jpg");
+  }
 }
 
 .advantages__recommendations {
@@ -116,6 +135,37 @@
   color: #000000;
 }
 
+.advantages__recommendations-item::before {
+  content: "";
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.advantages__recommendations-item:nth-child(1)::before {
+  width: 37px;
+  height: 36px;
+  top: -8%;
+  left: -21%;
+  background-image: url("../../img/icon-house.svg");
+}
+
+.advantages__recommendations-item:nth-child(2)::before {
+  width: 32px;
+  height: 38px;
+  top: -12%;
+  left: -20%;
+  background-image: url("../../img/icon-gift.svg");
+}
+
+.advantages__recommendations-item:nth-child(3)::before {
+  width: 40px;
+  height: 35px;
+  top: -5%;
+  left: -22%;
+  background-image: url("../../img/icon-burger.svg");
+}
+
 .advantages__recommendations-description {
   margin: 0;
   line-height: 21px;
@@ -126,6 +176,28 @@
 .advantages__item-number--white,
 .advantages__item-description--white {
   color: #ffffff;
+}
+
+@media (max-width: $tablet-width - 1px) {
+  .advantages__item {
+    position: relative;
+  }
+
+  .advantages__item:nth-child(n+4)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 6.5%;
+    width: 280px;
+    text-align: center;
+    height: 1px;
+    background-color: #d6d6d6;
+  }
+
+  .advantages__item:last-child::after {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -211,13 +283,25 @@
     margin-bottom: 22px;
   }
 
-  .advantages__item-image {
+  .advantages__item-picture {
     min-width: 66.6%;
     height: 256px;
+    background-image: url("../../img/main-city-tablet@1x.jpg");
   }
 
-  .advantages__item:nth-child(3) .advantages__item-image {
-    order: -1;
+  .advantages__item:nth-child(3) .advantages__item-picture {
+    background-image: url("../../img/main-bridge-tablet@1x.jpg");
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .advantages__item-picture {
+      background-image: url("../../img/main-city-tablet@2x.jpg");
+    }
+
+    .advantages__item:nth-child(3) .advantages__item-picture {
+      background-image: url("../../img/main-bridge-tablet@2x.jpg");
+      order: -1;
+    }
   }
 
   .advantages__recommendations {
@@ -241,6 +325,27 @@
 
   .advantages__recommendations-item:nth-child(3) {
     width: 23%;
+  }
+
+  .advantages__recommendations-item:nth-child(1)::before {
+    width: 75px;
+    height: 72px;
+    top: -92%;
+    left: 28%;
+  }
+
+  .advantages__recommendations-item:nth-child(2)::before {
+    width: 64px;
+    height: 75px;
+    top: -93%;
+    left: 29%;
+  }
+
+  .advantages__recommendations-item:nth-child(3)::before {
+    width: 77px;
+    height: 68px;
+    top: -71%;
+    left: 26%;
   }
 
   .advantages__recommendations-heading,
@@ -303,11 +408,40 @@
     padding-left: 16%;
   }
 
-  .advantages__item-image {
-    min-width: 800px;
+  .advantages__item-picture {
+    background-image: url("../../img/main-city-desktop@1x.jpg");
+  }
+
+  .advantages__item:nth-child(3) .advantages__item-picture {
+    background-image: url("../../img/main-bridge-desktop@1x.jpg");
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .advantages__item-picture {
+      background-image: url("../../img/main-city-desktop@2x.jpg");
+    }
+
+    .advantages__item:nth-child(3) .advantages__item-picture {
+      background-image: url("../../img/main-bridge-desktop@2x.jpg");
+    }
   }
 
   .advantages__recommendations-item:nth-child(3) {
     width: 28%;
+  }
+
+  .advantages__recommendations-item:nth-child(1)::before {
+    top: -113%;
+    left: 36%;
+  }
+
+  .advantages__recommendations-item:nth-child(2)::before {
+    top: -116%;
+    left: 37%;
+  }
+
+  .advantages__recommendations-item:nth-child(3)::before {
+    top: -85%;
+    left: 37%;
   }
 }

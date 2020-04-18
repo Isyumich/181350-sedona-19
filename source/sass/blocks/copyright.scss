@@ -1,10 +1,20 @@
+.copyright {
+  display: flex;
+}
+
 .copyright__text {
-  padding-right: 12%;
   color: #000000;
   line-height: 26px;
   text-transform: uppercase;
+  padding-top: 7px;
+  padding-right: 6px;
 }
 
-.copyright__image {
-  position: absolute;
+.copyright__link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url("../../img/htmlacademy.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }

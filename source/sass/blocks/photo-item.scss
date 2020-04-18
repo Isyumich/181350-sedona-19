@@ -15,9 +15,11 @@
 
 .photo-item__wrapper {
   padding-top: 15px;
+  display: flex;
+  flex-direction: column;
 }
 
-.photo-item__text {
+.photo-item__author {
   margin: 0;
 
   line-height: 24px;
@@ -25,11 +27,20 @@
 }
 
 .photo-item__likes {
+  display: flex;
   margin: 0;
-  padding-left: 37px;
   padding-top: 9px;
   font-weight: bold;
   line-height: 24px;
+}
+
+.photo-item__likes-count {
+  margin: 0;
+  padding-left: 5%;
+}
+
+.photo-item__likes-image {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
@@ -57,31 +68,34 @@
 
   .photo-item__wrapper {
     background-color: #f2f2f2;
-    position: relative;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 16px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 3%;
+    padding-right: 3.5%;
     padding-bottom: 15px;
+    padding-top: 15px;
+  }
+
+  .photo-item:nth-child(2n) .photo-item__wrapper {
+    padding-top: 17px;
+    padding-left: 6%;
+    padding-right: 9%;
+  }
+
+  .photo-item:nth-child(2n+3) .photo-item__wrapper {
+    padding-top: 16px;
+    padding-left: 6.5%;
+    padding-right: 11.5%;
   }
 
   .photo-item__likes {
     padding: 0;
-    position: absolute;
+    align-self: center;
   }
 
-  .photo-item:first-child .photo-item__likes {
-    right: 4%;
-    top: 35%;
-  }
-
-  .photo-item:nth-child(2n) .photo-item__likes {
-    right: 10%;
-    top: 37%;
-  }
-
-  .photo-item:nth-child(2n+3) .photo-item__likes {
-    right: 12%;
-    top: 36%;
+  .photo-item__likes-count {
+    margin: 0;
+    padding-left: 16%;
   }
 }
 
@@ -98,27 +112,35 @@
     position: absolute;
     bottom: 0;
     width: 100%;
+    padding-left: 1.75%;
+    padding-right: 1.75%;
+  }
+
+  .photo-item:nth-child(2n) .photo-item__wrapper {
+    padding-top: 17px;
+    padding-left: 5.5%;
+    padding-right: 7%;
+  }
+
+  .photo-item:nth-child(2n+3) .photo-item__wrapper {
+    padding-top: 16px;
+    padding-left: 5.5%;
+    padding-right: 9%;
   }
 
   .photo-item__heading,
-  .photo-item__text,
+  .photo-item__author,
   .photo-item__likes {
     color: #ffffff;
     font-weight: bold;
   }
 
-  .photo-item:first-child .photo-item__likes {
-    right: 5%;
-    top: 35%;
+  .photo-item__likes-count {
+    margin: 0;
   }
 
-  .photo-item:nth-child(2n) .photo-item__likes {
-    right: 16%;
-    top: 37%;
-  }
-
-  .photo-item:nth-child(2n+3) .photo-item__likes {
-    right: 17.5%;
-    top: 36%;
+  .photo-item__likes-image {
+    fill: white;
+    opacity: 1;
   }
 }
