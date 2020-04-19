@@ -291,6 +291,7 @@
 
   .advantages__item:nth-child(3) .advantages__item-picture {
     background-image: url("../img/main-bridge-tablet@1x.jpg");
+    order: -1;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -300,7 +301,6 @@
 
     .advantages__item:nth-child(3) .advantages__item-picture {
       background-image: url("../img/main-bridge-tablet@2x.jpg");
-      order: -1;
     }
   }
 
