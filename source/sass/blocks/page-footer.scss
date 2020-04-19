@@ -18,11 +18,11 @@
   width: 47%;
   padding-left: 26.5%;
   padding-right: 26.5%;
-  margin-bottom: 45px;
+  margin-bottom: 37px;
 }
 
 .page-footer__copyright {
-  text-align: center;
+  padding-left: 29.5%;
 }
 
 @media (min-width: $tablet-width) {
@@ -31,7 +31,7 @@
     justify-content: space-between;
     align-items: center;
     padding-left: 8%;
-    padding-right: 12.5%;
+    padding-right: 7%;
     padding-top: 36px;
     padding-bottom: 36px;
   }
@@ -45,11 +45,15 @@
     margin: 0;
     width: 151px;
   }
+
+  .page-footer__copyright {
+    padding-left: 0;
+  }
 }
 
 @media (min-width: $desctop-width) {
   .page-footer__wrapper {
     padding-left: 10%;
-    padding-right: 13%;
+    padding-right: 9.5%;
   }
 }
