@@ -86,23 +86,23 @@
 .advantages__item-picture {
   width: 320px;
   height: 260px;
-  background-image: url("../../img/main-city-mobile@1x.jpg");
+  background-image: url("../img/main-city-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .advantages__item:nth-child(3) .advantages__item-picture {
-  background-image: url("../../img/main-bridge-mobile@1x.jpg");
+  background-image: url("../img/main-bridge-mobile@1x.jpg");
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
   .advantages__item-picture {
-    background-image: url("../../img/main-city-mobile@2x.jpg");
+    background-image: url("../img/main-city-mobile@2x.jpg");
   }
 
   .advantages__item:nth-child(3) .advantages__item-picture {
-    background-image: url("../../img/main-bridge-mobile@2x.jpg");
+    background-image: url("../img/main-bridge-mobile@2x.jpg");
   }
 }
 
@@ -147,7 +147,7 @@
   height: 36px;
   top: -8%;
   left: -21%;
-  background-image: url("../../img/icon-house.svg");
+  background-image: url("../img/icon-house.svg");
 }
 
 .advantages__recommendations-item:nth-child(2)::before {
@@ -155,7 +155,7 @@
   height: 38px;
   top: -12%;
   left: -20%;
-  background-image: url("../../img/icon-gift.svg");
+  background-image: url("../img/icon-gift.svg");
 }
 
 .advantages__recommendations-item:nth-child(3)::before {
@@ -163,7 +163,7 @@
   height: 35px;
   top: -5%;
   left: -22%;
-  background-image: url("../../img/icon-burger.svg");
+  background-image: url("../img/icon-burger.svg");
 }
 
 .advantages__recommendations-description {
@@ -286,20 +286,20 @@
   .advantages__item-picture {
     min-width: 66.6%;
     height: 256px;
-    background-image: url("../../img/main-city-tablet@1x.jpg");
+    background-image: url("../img/main-city-tablet@1x.jpg");
   }
 
   .advantages__item:nth-child(3) .advantages__item-picture {
-    background-image: url("../../img/main-bridge-tablet@1x.jpg");
+    background-image: url("../img/main-bridge-tablet@1x.jpg");
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     .advantages__item-picture {
-      background-image: url("../../img/main-city-tablet@2x.jpg");
+      background-image: url("../img/main-city-tablet@2x.jpg");
     }
 
     .advantages__item:nth-child(3) .advantages__item-picture {
-      background-image: url("../../img/main-bridge-tablet@2x.jpg");
+      background-image: url("../img/main-bridge-tablet@2x.jpg");
       order: -1;
     }
   }
@@ -409,20 +409,20 @@
   }
 
   .advantages__item-picture {
-    background-image: url("../../img/main-city-desktop@1x.jpg");
+    background-image: url("../img/main-city-desktop@1x.jpg");
   }
 
   .advantages__item:nth-child(3) .advantages__item-picture {
-    background-image: url("../../img/main-bridge-desktop@1x.jpg");
+    background-image: url("../img/main-bridge-desktop@1x.jpg");
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     .advantages__item-picture {
-      background-image: url("../../img/main-city-desktop@2x.jpg");
+      background-image: url("../img/main-city-desktop@2x.jpg");
     }
 
     .advantages__item:nth-child(3) .advantages__item-picture {
-      background-image: url("../../img/main-bridge-desktop@2x.jpg");
+      background-image: url("../img/main-bridge-desktop@2x.jpg");
     }
   }
 
