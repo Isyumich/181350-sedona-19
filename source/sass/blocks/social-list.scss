@@ -17,16 +17,5 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-}
-
-.social-list__link--twitter {
-  content: url("../img/icon-twitter.svg");
-}
-
-.social-list__link--youtube {
-  content: url("../img/icon-youtube.svg");
-}
-
-.social-list__link--facebook {
-  content: url("../img/icon-facebook.svg");
+  fill: #ffffff;
 }
