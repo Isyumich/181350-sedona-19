@@ -70,8 +70,99 @@
     </div>
   </header>
 
-  <main>
+  <main class="feedback">
+    <h1 class="feedback__heading">Оставьте свой отзыв</h1>
+    <p class="feedback__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    <form class="feedback__form" action="https://echo.htmlacademy.ru" method="get">
+      <fieldset class="feedback__form-name form-name">
+        <legend class="form-name__heading">Представтесь:</legend>
+        <ul class="form-name__list">
+          <li class="form-name__item">
+            <input type="text" name="first-name" value="Петр" id="first-name" required>
+            <label for="first-name">Имя*:</label>
+          </li>
+          <li class="form-name__item">
+            <input type="text" name="first-name" value="Иванов" id="last-name" required>
+            <label for="last-name">Фамилия*:</label>
+          </li>
+          <li class="form-name__item">
+            <input type="text" name="first-name" value="Александрович" id="middle-name">
+            <label for="middle-name">Отчество:</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="feedback__form-contacts form-contacts">
+        <legend class="form-contacts__heading">Контактная информация:</legend>
+        <ul class="form-contacts__list">
+          <li class="form-contacts__item">
+            <input type="tel" name="phone-number" value="Введите телефон" id="phone-number" required>
+            <label for="phone-number">Контактный телефон*:</label>
+          </li>
+          <li class="form-contacts__item">
+            <input type="email" name="email" value="Введите e-mail" id="email" required>
+            <label for="email">Электронная почта*:</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="feedback__form-impression form-impression">
+        <legend class="form-impression__heading">Ваше общее впечатление:</legend>
+        <ul class="form-impression__list">
+          <li class="form-impression__item">
+            <input type="radio" name="positive" id="positive">
+            <label for="positive">Скорее положительное:</label>
+          </li>
+          <li class="form-impression__item">
+            <input type="radio" name="positive" id="negative">
+            <label for="negative">Скорее отрицательное:</label>
+          </li>
+          <li class="form-impression__item">
+            <input type="radio" name="positive" id="neutral">
+            <label for="neutral">Затрудняюсь ответить:</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="feedback__form-sight form-sight">
+        <legend class="form-sight__heading">Посещенные достопримечательности:</legend>
+        <ul class="form-sight__list">
+          <li class="form-sight__item">
+            <input type="checkbox" name="devil's bridge" id="devil's-bridge">
+            <label for="devil's-bridge">Мост дьявола</label>
+          </li>
+          <li class="form-sight__item">
+            <input type="checkbox" name="mountain-bell" id="mountain-bell">
+            <label for="mountain-bell">Гора-Колокол</label>
+          </li>
+          <li class="form-sight__item">
+            <input type="checkbox" name="slide-park" id="slide-park">
+            <label for="slide-park">Слайд-парк</label>
+          </li>
+          <li class="form-sight__item">
+            <input type="checkbox" name="red rocks" id="red-rocks">
+            <label for="red-rocks">Мост дьявола</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="feedback__form-emotions form-emotions">
+        <legend class="form-emotions__heading">Опишите свои эмоции:</legend>
+          <p class="form-emotions__item">
+            <textarea name="emotions" id="emotions" placeholder="Опишите подробно все свои восторги">
+            </textarea>
+            <label for="emotions"></label>
+        </p>
+      </fieldset>
+      <button class="feedback__button" type="submit">Отправить отзыв</button>
+    </form>
+    <section class="feedback__modal-error modal-error">
+      <h2 class="modal-error__heading">Что-то пошло не так!</h2>
+      <p class="modal-error_description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button type="button">ОК</button>
 
+    </section>
+    <section class="feedback__modal-success modal-success">
+      <h2 class="modal-error__heading">Ваш отзыв отправлен!</h2>
+      <p class="modal-error_description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      <button type="button">Закрыть окно</button>
+    </section>
   </main>
 
   <footer class="page-footer container">
