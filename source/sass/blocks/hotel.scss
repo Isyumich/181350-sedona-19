@@ -1,0 +1,43 @@
+.hotel__heading,
+.hotel__description {
+  margin: 0;
+  padding-right: 8%;
+  padding-left: 8%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hotel__heading {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.hotel__description {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.hotel__map {
+  width: 100%;
+  position: relative;
+}
+
+.hotel__map-image {
+  display: block;
+  width: 100%;
+}
+
+.hotel__map-marker {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: $tablet-width) {
+  .hotel__heading {
+    font-size: 30px;
+  }
+}

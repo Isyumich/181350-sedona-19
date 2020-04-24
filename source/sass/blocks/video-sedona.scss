@@ -1,0 +1,25 @@
+.video-sedona__heading,
+.video-sedona__description {
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-transform: uppercase;
+}
+
+.video-sedona__heading {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.video-sedona__description {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}
+
+@media (min-width: $tablet-width) {
+  .video-sedona__heading {
+    font-size: 30px;
+  }
+}

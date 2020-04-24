@@ -26,10 +26,30 @@ a {
   display: none;
 }
 
+.button {
+  display: block;
+  height: 58px;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $light-grey-blue;
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 58px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 @media (min-width: $tablet-width) {
   .container {
     min-width: 768px;
     max-width: 1199px;
+  }
+
+  .button {
+    width: 458px;
   }
 
   .screen-media-only {
