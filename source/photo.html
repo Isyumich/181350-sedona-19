@@ -93,7 +93,7 @@
                 <p class="photo-item__author">Автор фото: Борис</p>
               </div>
               <div class="photo-item__likes">
-                <svg x="0px" y="0px" width="22px" height="20px">
+                <svg class="photo-item__likes-image" x="0px" y="0px" width="22px" height="20px">
                   <use xlink:href="#icon-like"></use>
                 </svg>
                 <p class="photo-item__likes-count">1350</p>
@@ -115,7 +115,7 @@
                 <p class="photo-item__author">Автор фото: Сергей</p>
               </div>
               <div class="photo-item__likes">
-                <svg x="0px" y="0px" width="22px" height="20px">
+                <svg class="photo-item__likes-image" x="0px" y="0px" width="22px" height="20px">
                   <use xlink:href="#icon-like"></use>
                 </svg>
                 <p class="photo-item__likes-count">143</p>
@@ -137,7 +137,7 @@
                 <p class="photo-item__author">Автор фото: Петр</p>
               </div>
               <div class="photo-item__likes">
-                <svg x="0px" y="0px" width="22px" height="20px">
+                <svg class="photo-item__likes-image" x="0px" y="0px" width="22px" height="20px">
                   <use xlink:href="#icon-like"></use>
                 </svg>
                 <p class="photo-item__likes-count">96</p>
@@ -159,7 +159,7 @@
                 <p class="photo-item__author">Автор фото: Антон</p>
               </div>
               <div class="photo-item__likes">
-                <svg x="0px" y="0px" width="22px" height="20px">
+                <svg class="photo-item__likes-image" x="0px" y="0px" width="22px" height="20px">
                   <use xlink:href="#icon-like"></use>
                 </svg>
                 <p class="photo-item__likes-count">254</p>
@@ -170,7 +170,16 @@
         <div class="photo-video__video video-sedona">
           <h2 class="video-sedona__heading">Все еще сомневаетесь</h2>
           <p class="video-sedona__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          <video class="video-sedona__video" src="#"></video>
+          <div class="video-sedona__video">
+            <picture>
+              <img class="video-sedona__main-image" src="img/video-mobile@1x.jpg" alt="Муляж видео о Седоне" width="320px" height="200px">
+            </picture>
+            <div class="video-sedona__panel">
+              <img class="video-sedona__replay" src="img/icon-video-replay.svg" alt="#" width="16px" height="20px">
+              <img class="video-sedona__subtitles" src="img/icon-video-subtitles.svg" alt="#" width="16px" height="20px">
+              <img class="video-sedona__fullscreen" src="img/icon-video-fullscreen.svg" alt="#" width="16px" height="20px">
+            </div>
+          </div>
         </div>
       </section>
     </div>

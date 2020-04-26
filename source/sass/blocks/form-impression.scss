@@ -1,5 +1,39 @@
+.form-impression__heading {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .form-impression__list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.form-impression__input {
+  display: none;
+}
+
+
+.form-impression__label {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  padding-left: 70px;
+}
+
+.form-impression__label::before {
+  display: block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: #f2f2f2;
+  border: 10px solid #f2f2f2;
+  border-radius: 50%;
+}
+
+.form-impression__input:checked + .form-impression__label::before {
+  background-color: #333333;
 }

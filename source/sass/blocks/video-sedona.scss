@@ -18,6 +18,63 @@
   color: #333333;
 }
 
+.video-sedona__video {
+  position: relative;
+  padding-bottom: 66px;
+}
+
+.video-sedona__main-image {
+  display: block;
+}
+
+.video-sedona__panel {
+  display: flex;
+  height: 110px;
+  width: 87.5%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 41%, #f2f2f2 41%);
+  position: absolute;
+  bottom: 0;
+  left: 6.5%;
+}
+
+.video-sedona__panel::before {
+  content: "";
+  width: 235px;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+
+.video-sedona__panel::after {
+  content: "";
+  width: 11px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 1);
+  position: absolute;
+  border-radius: 50%;
+  top: 22%;
+  left: 20%;
+}
+
+.video-sedona__replay,
+.video-sedona__subtitles,
+.video-sedona__fullscreen {
+  margin-top: 65px;
+}
+
+.video-sedona__replay {
+  margin-right: 133px;
+  margin-left: 6.5%;
+}
+
+.video-sedona__subtitles {
+  margin-right: 31px;
+}
+
 @media (min-width: $tablet-width) {
   .video-sedona__heading {
     font-size: 30px;
