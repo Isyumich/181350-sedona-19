@@ -74,41 +74,41 @@
     <h1 class="feedback__heading">Оставьте свой отзыв</h1>
     <p class="feedback__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     <form class="feedback__form" action="https://echo.htmlacademy.ru" method="get">
-      <fieldset class="feedback__form-name form-name">
+      <fieldset class="feedback__item form-name">
         <legend class="form-name__heading">Представтесь:</legend>
         <ul class="form-name__list">
           <li class="form-name__item">
-            <input class="form-name__input" type="text" name="first-name" value="Петр" id="first-name" required>
             <label class="form-name__label" for="first-name">Имя*:</label>
+            <input class="form-name__input" type="text" name="first-name" placeholder="Петр" id="first-name" required>
           </li>
           <li class="form-name__item">
-            <input class="form-name__input" type="text" name="first-name" value="Иванов" id="last-name" required>
             <label class="form-name__label" for="last-name">Фамилия*:</label>
+            <input class="form-name__input" type="text" name="first-name" placeholder="Иванов" id="last-name" required>
           </li>
           <li class="form-name__item">
-            <input class="form-name__input" type="text" name="first-name" value="Александрович" id="middle-name">
             <label class="form-name__label" for="middle-name">Отчество:</label>
+            <input class="form-name__input" type="text" name="first-name" placeholder="Александрович" id="middle-name">
           </li>
         </ul>
       </fieldset>
-      <fieldset class="feedback__form-contacts form-contacts">
+      <fieldset class="feedback__item form-contacts">
         <legend class="form-contacts__heading">Контактная информация:</legend>
         <ul class="form-contacts__list">
           <li class="form-contacts__item">
-            <input class="form-contacts__input" type="tel" name="phone-number" value="Введите телефон" id="phone-number" required>
             <label class="form-contacts__label" for="phone-number">Контактный телефон*:</label>
+            <input class="form-contacts__input" type="tel" name="phone-number" placeholder="Введите телефон" id="phone-number" required>
           </li>
           <li class="form-contacts__item">
-            <input class="form-contacts__input" type="email" name="email" value="Введите e-mail" id="email" required>
             <label class="form-contacts__label" for="email">Электронная почта*:</label>
+            <input class="form-contacts__input" type="email" name="email" placeholder="Введите e-mail" id="email" required>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="feedback__form-impression form-impression">
+      <fieldset class="feedback__item form-impression">
         <legend class="form-impression__heading">Ваше общее впечатление:</legend>
         <ul class="form-impression__list">
           <li class="form-impression__item">
-            <input class="form-impression__input" type="radio" name="positive" id="positive">
+            <input class="form-impression__input" type="radio" name="positive" checked id="positive">
             <label class="form-impression__label" for="positive">Скорее положительное:</label>
           </li>
           <li class="form-impression__item">
@@ -121,7 +121,7 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="feedback__form-sight form-sight">
+      <fieldset class="feedback__item form-sight">
         <legend class="form-sight__heading">Посещенные достопримечательности:</legend>
         <ul class="form-sight__list">
           <li class="form-sight__item">
@@ -142,7 +142,7 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="feedback__form-emotions form-emotions">
+      <fieldset class="feedback__item form-emotions">
         <legend class="form-emotions__heading">Опишите свои эмоции:</legend>
           <p class="form-emotions__item">
             <textarea class="form-emotions__text" name="emotions" id="emotions" placeholder="Опишите подробно все свои восторги">
@@ -150,18 +150,18 @@
             <label class="form-emotions__label" for="emotions"></label>
         </p>
       </fieldset>
-      <button class="feedback__button" type="submit">Отправить отзыв</button>
+      <button class="feedback__button button" type="submit">Отправить отзыв</button>
     </form>
     <section class="feedback__modal-error modal-error">
       <h2 class="modal-error__heading">Что-то пошло не так!</h2>
       <p class="modal-error__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="modal-error__button" type="button">ОК</button>
+      <button class="modal-error__button button" type="button">ОК</button>
 
     </section>
     <section class="feedback__modal-success modal-success">
       <h2 class="modal-success__heading">Ваш отзыв отправлен!</h2>
       <p class="modal-success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-      <button class="modal-success__button" type="button">Закрыть окно</button>
+      <button class="modal-success__button button" type="button">Закрыть окно</button>
     </section>
   </main>
 

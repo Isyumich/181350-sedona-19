@@ -1,0 +1,25 @@
+.feedback__heading,
+.feedback__description {
+  padding-left: 6%;
+  padding-right: 6%;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.feedback__heading {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.feedback__description {
+  font-size: 14px;
+  line-height: 26px;
+  color: #333333;
+}
+
+.feedback__item {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
