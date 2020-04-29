@@ -21,6 +21,7 @@ a {
   max-width: 767px;
   margin-left: auto;
   margin-right: auto;
+  background-color: #ffffff;
 }
 
 .screen-media-only {
@@ -31,8 +32,6 @@ a {
   display: block;
   height: 58px;
   width: 280px;
-  margin-left: auto;
-  margin-right: auto;
   background-color: $light-grey-blue;
   color: #ffffff;
   font-size: 21px;
@@ -58,12 +57,13 @@ a {
   }
 }
 
-@media (min-width: $desctop-width) {
+@media (min-width: $desktop-width) {
   body {
     background-color: #f2f2f2;
   }
 
   .container {
     width: 1200px;
+    background-color: #ffffff;
   }
 }

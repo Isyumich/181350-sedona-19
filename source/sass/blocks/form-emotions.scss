@@ -7,6 +7,12 @@
 }
 
 .form-emotions__text {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  min-height: 160px;
+  background-color: #f2f2f2;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;

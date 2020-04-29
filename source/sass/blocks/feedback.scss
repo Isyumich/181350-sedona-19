@@ -1,9 +1,14 @@
+.feedback {
+  background-color: #ffffff;
+}
+
 .feedback__heading,
 .feedback__description {
   padding-left: 6%;
   padding-right: 6%;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
 }
 
 .feedback__heading {
@@ -16,10 +21,59 @@
   font-size: 14px;
   line-height: 26px;
   color: #333333;
+  border-bottom: 1px solid #f2f2f2;
 }
 
 .feedback__item {
   border: none;
   padding: 0;
+  padding-left: 6.5%;
+  padding-right: 6.5%;
   margin: 0;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.feedback__item:nth-child(5) {
+  border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__heading {
+    font-size: 30px;
+  }
+
+  .feedback__description {
+    padding-left: 21.5%;
+    padding-right: 21.5%;
+    border: none;
+  }
+
+  .feedback__form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .feedback__item {
+    border: none;
+    padding: 0;
+  }
+
+  .feedback__item:nth-child(1) {
+    width: 50%;
+  }
+
+  .feedback__item:nth-child(2) {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .feedback__item:nth-child(3) {
+    order: -1;
+    width: 50%;
+  }
+
+  .feedback__item:nth-child(n+4) {
+    width: 100%;
+  }
 }

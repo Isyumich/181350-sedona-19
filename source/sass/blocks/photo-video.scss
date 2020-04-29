@@ -81,7 +81,7 @@
   }
 }
 
-@media (min-width: $desctop-width) {
+@media (min-width: $desktop-width) {
   .photo-video__heading,
   .photo-video__text {
     padding-left: 386px;
@@ -95,5 +95,9 @@
   .photo-video__list {
     padding: 0;
     padding-top: 70px;
+  }
+
+  .photo-video__video {
+    padding-bottom: 40px;
   }
 }

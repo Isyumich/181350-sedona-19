@@ -11,12 +11,21 @@
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  padding-top: 30px;
 }
 
 .hotel__description {
   font-size: 14px;
   line-height: 24px;
   color: #333333;
+  padding-top: 20px;
+  margin-bottom: 33px;
+}
+
+.hotel__search {
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hotel__map {
@@ -38,6 +47,28 @@
 
 @media (min-width: $tablet-width) {
   .hotel__heading {
+    padding-top: 57px;
     font-size: 30px;
+  }
+
+  .hotel__description {
+    padding-left: 21%;
+    padding-right: 21%;
+    padding-top: 30px;
+    margin-bottom: 41px;
+  }
+
+  .hotel__search {
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hotel__description {
+    margin-bottom: 44px;
+  }
+
+  .hotel__search {
+    margin-bottom: 70px;
   }
 }
