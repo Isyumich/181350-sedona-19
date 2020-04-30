@@ -33,6 +33,10 @@
   padding-right: 7%;
 }
 
+.photo-video__video {
+  padding-bottom: 107px;
+}
+
 @media (max-width: $tablet-width - 1px) {
   .photo-video__item {
     border-bottom: solid 1px #eeeeee;
@@ -79,6 +83,13 @@
   .photo-video__item {
     padding: 0;
   }
+
+  .photo-video__video {
+    width: 84.5%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 40px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -98,6 +109,7 @@
   }
 
   .photo-video__video {
-    padding-bottom: 40px;
+    width: 66.66%;
+    padding-bottom: 82px;
   }
 }

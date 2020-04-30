@@ -15,6 +15,8 @@
   font-size: 18px;
   font-weight: bold;
   line-height: 26px;
+  padding-top: 20px;
+  margin-bottom: 20px;
 }
 
 .feedback__description {
@@ -37,6 +39,11 @@
   border: none;
 }
 
+.feedback__button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media (min-width: $tablet-width) {
   .feedback__heading {
     font-size: 30px;
@@ -51,6 +58,8 @@
   .feedback__form {
     display: flex;
     flex-wrap: wrap;
+    padding-left: 8%;
+    padding-right: 8%;
   }
 
   .feedback__item {
@@ -73,7 +82,23 @@
     width: 50%;
   }
 
+  .feedback__item:nth-child(4) {
+    padding-left: 15.5%;
+    padding-right: 15.5%;
+  }
+
   .feedback__item:nth-child(n+4) {
     width: 100%;
+  }
+
+  .feedback__button {
+    width: 324px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback__item:nth-child(2),
+  .feedback__item:nth-child(4) {
+    padding: 0;
   }
 }

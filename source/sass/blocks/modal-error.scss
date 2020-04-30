@@ -14,3 +14,15 @@
   font-size: 14px;
   line-height: 26px;
 }
+
+.modal-error__button {
+  width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .modal-error__button {
+    width: 272px;
+  }
+}
