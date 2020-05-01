@@ -1,8 +1,10 @@
+.video-sedona {
+  background-color: white;
+}
+
 .video-sedona__heading,
 .video-sedona__description {
   text-align: center;
-  padding-left: 10%;
-  padding-right: 10%;
   text-transform: uppercase;
 }
 
@@ -10,73 +12,194 @@
   font-size: 18px;
   font-weight: bold;
   line-height: 26px;
+  margin: 0;
+  padding-top: 32px;
 }
 
 .video-sedona__description {
-  font-size: 14px;
   line-height: 24px;
   color: #333333;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin: 0;
+  padding-top: 27px;
+  margin-bottom: 35px;
 }
 
 .video-sedona__video {
   position: relative;
-  padding-bottom: 66px;
 }
 
 .video-sedona__main-image {
   display: block;
+  width: 100%;
 }
 
 .video-sedona__panel {
   display: flex;
-  height: 110px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  height: 111px;
+  transform: translateY(66px);
   width: 87.5%;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 41%, #f2f2f2 41%);
   position: absolute;
   bottom: 0;
   left: 6.5%;
+  background-image: linear-gradient(to bottom, transparent 45px, #f2f2f2 45px);
 }
 
-.video-sedona__panel::before {
-  content: "";
-  width: 235px;
+.video-sedona__scroll-bar {
+  width: 100%;
+  height: 45px;
+  background-color: #000000;
+  opacity: 0.6;
+  order: -1;
+  position: relative;
+  margin-bottom: 23px;
+}
+
+.video-sedona__streak {
+  width: 84%;
   height: 3px;
-  background-color: rgba(255, 255, 255, 0.6);
-  position: absolute;
-  top: 25%;
-  left: 10%;
+  background-color: #666666;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 23px;
 }
 
-.video-sedona__panel::after {
-  content: "";
-  width: 11px;
-  height: 10px;
-  background-color: rgba(255, 255, 255, 1);
+.video-sedona__button {
+  display: block;
   position: absolute;
+  border: none;
+  padding: 0;
+  width: 9px;
+  height: 9px;
   border-radius: 50%;
-  top: 22%;
-  left: 20%;
+  top: 45%;
+  left: 20.5%;
+  background-color: #ffffff;
 }
 
 .video-sedona__replay,
 .video-sedona__subtitles,
 .video-sedona__fullscreen {
-  margin-top: 65px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
 }
 
 .video-sedona__replay {
   margin-right: 133px;
-  margin-left: 6.5%;
+  margin-left: 8.5%;
 }
 
 .video-sedona__subtitles {
   margin-right: 31px;
 }
 
+.video-sedona__replay-image,
+.video-sedona__subtitles-image,
+.video-sedona__fullscreen-image {
+  fill: #454545;
+}
+
 @media (min-width: $tablet-width) {
   .video-sedona__heading {
     font-size: 30px;
+    padding-top: 67px;
+  }
+
+  .video-sedona__description {
+    padding-right: 18%;
+    padding-left: 18%;
+    padding-top: 30px;
+    margin-bottom: 75px;
+  }
+
+  .video-sedona__main-image {
+    width: 100%;
+    height: 499px;
+  }
+
+  .video-sedona__panel {
+    height: 93px;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    transform: translateY(-100%);
+    left: 0;
+    background-image: none;
+    background-color: #000000;
+    opacity: 0.6;
+  }
+
+  .video-sedona__scroll-bar {
+    position: relative;
+    width: 60%;
+    margin-right: 7%;
+    margin-top: 22px;
+    margin-bottom: 0;
+    order: 0;
+  }
+
+  .video-sedona__streak {
+    width: 100%;
+  }
+
+  .video-sedona__button {
+    left: 30%;
+  }
+
+  .video-sedona__replay,
+  .video-sedona__subtitles,
+  .video-sedona__fullscreen {
+    margin-top: 25px;
+  }
+
+  .video-sedona__replay {
+    margin-right: 6%;
+    margin-left: 5.5%;
+  }
+
+  .video-sedona__subtitles {
+    margin-right: 31px;
+  }
+
+  .video-sedona__replay-image,
+  .video-sedona__subtitles-image,
+  .video-sedona__fullscreen-image {
+    fill: #ffffff;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video-sedona__heading {
+    padding-top: 70px;
+  }
+
+  .video-sedona__description {
+    padding-right: 23%;
+    padding-left: 23%;
+  }
+
+  .video-sedona__main-image {
+    height: 499px;
+  }
+
+  .video-sedona__scroll-bar {
+    width: 67.5%;
+    margin-right: 5.5%;
+  }
+
+  .video-sedona__button {
+    left: 21%;
+  }
+
+
+  .video-sedona__replay {
+    margin-left: 4.5%;
+    margin-right: 5%;
   }
 }

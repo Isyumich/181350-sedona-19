@@ -12,6 +12,10 @@
   list-style: none;
 }
 
+.form-impression__item {
+  margin-bottom: 20px;
+}
+
 .form-impression__input {
   display: none;
 }
@@ -22,6 +26,7 @@
   line-height: 26px;
   font-weight: bold;
   padding-left: 70px;
+  position: relative;
 }
 
 .form-impression__label::before {
@@ -32,6 +37,7 @@
   background-color: #f2f2f2;
   border: 10px solid #f2f2f2;
   border-radius: 50%;
+  position: absolute;
 }
 
 .form-impression__input:checked + .form-impression__label::before {

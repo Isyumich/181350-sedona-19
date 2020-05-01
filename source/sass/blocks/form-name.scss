@@ -12,16 +12,37 @@
   list-style: none;
 }
 
+.form-name__item {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
 .form-name__input {
+  display: block;
+  box-sizing: border-box;
+  width: 230px;
+  height: 58px;
+  border: none;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
   color: #000000;
+  padding-left: 20px;
   background-color: #f2f2f2;
+}
+
+.form-name__item:nth-child(2) .form-name__input {
+  width: 192px;
+}
+
+.form-name__item:nth-child(3) .form-name__input {
+  width: 194px;
 }
 
 .form-name__label {
   line-height: 26px;
   color: #333333;
   text-transform: uppercase;
+  align-self: center;
 }

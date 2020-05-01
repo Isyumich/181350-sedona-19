@@ -14,3 +14,14 @@
   font-size: 14px;
   line-height: 26px;
 }
+
+.modal-success__button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .modal-success__button {
+    width: 458px;
+  }
+}
