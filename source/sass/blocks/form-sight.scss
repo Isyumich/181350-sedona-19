@@ -1,6 +1,8 @@
 .form-sight__heading {
   font-size: 18px;
   line-height: 26px;
+  padding-top: 17px;
+  margin-bottom: 30px;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
@@ -10,10 +12,15 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  padding-bottom: 40px;
 }
 
 .form-sight__item {
-  margin-bottom: 65px;
+  margin-bottom: 55px;
+}
+
+.form-sight__item:last-child {
+  margin-bottom: 0;
 }
 
 .form-sight__input {
@@ -24,17 +31,18 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
-  padding-left: 70px;
+  padding-left: 80px;
   position: relative;
 }
 
 .form-sight__label::before {
   display: block;
   content: "";
-  width: 48px;
-  height: 48px;
+  width: 55px;
+  height: 55px;
   background-color: #f2f2f2;
   position: absolute;
+  transform: translateY(-25%);
 }
 
 .form-sight__input:checked + .form-sight__label::before {
@@ -45,18 +53,92 @@
 }
 
 @media (min-width: $tablet-width) {
+  .form-sight__heading {
+    font-size: 21px;
+    position: relative;
+    margin-bottom: 56px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .form-sight__heading::before {
+    content: "";
+    display: block;
+    width: 125px;
+    height: 1px;
+    background-color: #f2f2f2;
+    position: absolute;
+    left: -20%;
+    top: 60%;
+  }
+
+  .form-sight__heading::after {
+    content: "";
+    display: block;
+    width: 125px;
+    height: 1px;
+    background-color: #f2f2f2;
+    position: absolute;
+    left: 94%;
+    top: 60%;
+  }
+
   .form-sight__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .form-sight__item {
-    width: 50%;
+    width: 44%;
+    margin-bottom: 60px;
+  }
+
+  .form-sight__item:nth-last-child(1),
+  .form-sight__item:nth-last-child(2) {
+    margin-bottom: 0;
+  }
+
+  .form-sight__label {
+    padding-left: 82px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .form-sight__heading {
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 22px;
+  }
+
+  .form-sight__heading::before {
+    width: 283px;
+    left: 0;
+    top: 60%;
+  }
+
+  .form-sight__heading::after {
+    width: 283px;
+    left: 71%;
+    top: 60%;
+  }
+
+  .form-sight__list {
+    max-width: 100%;
+    justify-content: flex-start;
+    padding-bottom: 0;
+  }
+
   .form-sight__item {
-    width: 25%;
+    max-width: 27%;
+    margin-bottom: 30px;
+  }
+
+  .form-sight__item:nth-child(4n+3) {
+    max-width: 24.5%;
+  }
+
+  .form-sight__item:nth-child(4n) {
+    max-width: 14%;
   }
 }

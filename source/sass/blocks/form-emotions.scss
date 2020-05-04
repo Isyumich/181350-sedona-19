@@ -1,6 +1,8 @@
 .form-emotions__heading {
   font-size: 18px;
   line-height: 26px;
+  padding-top: 15px;
+  margin-bottom: 5px;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
@@ -17,4 +19,53 @@
   line-height: 26px;
   font-weight: bold;
   text-align: left;
+}
+
+@media (min-width: $tablet-width) {
+  .form-emotions__heading {
+    font-size: 21px;
+    position: relative;
+    margin-bottom: 43px;
+  }
+
+  .form-emotions__heading::before {
+    content: "";
+    display: block;
+    width: 125px;
+    height: 1px;
+    background-color: #f2f2f2;
+    position: absolute;
+    left: -80%;
+    top: 65%;
+  }
+
+  .form-emotions__heading::after {
+    content: "";
+    display: block;
+    width: 125px;
+    height: 1px;
+    background-color: #f2f2f2;
+    position: absolute;
+    left: 130%;
+    top: 65%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-emotions__heading {
+    padding-top: 23px;
+    margin-bottom: 42px;
+  }
+
+  .form-emotions__heading::before {
+    width: 283px;
+    left: -140%;
+    top: 65%;
+  }
+
+  .form-emotions__heading::after {
+    width: 283px;
+    left: 130%;
+    top: 65%;
+  }
 }

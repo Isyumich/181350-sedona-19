@@ -23,29 +23,30 @@
 }
 
 .page-footer__copyright {
-  padding-left: 29.5%;
+  padding-left: 30.25%;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding-left: 8%;
     padding-right: 7%;
-    padding-top: 36px;
+    padding-top: 35px;
     padding-bottom: 36px;
   }
 
   .page-footer__heading {
     padding: 0;
     margin: 0;
+    margin-right: 17%;
   }
 
   .page-footer__social-list {
     padding: 0;
     margin: 0;
     width: 151px;
+    margin-right: 18.5%;
   }
 
   .page-footer__copyright {
@@ -57,5 +58,13 @@
   .page-footer__wrapper {
     padding-left: 10%;
     padding-right: 9.5%;
+  }
+
+  .page-footer__heading {
+    margin-right: 28%;
+  }
+
+  .page-footer__social-list {
+    margin-right: 28.5%;
   }
 }
