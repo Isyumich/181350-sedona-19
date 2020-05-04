@@ -1,6 +1,8 @@
 .form-name__heading {
   font-size: 18px;
   line-height: 26px;
+  padding-top: 19px;
+  margin-bottom: 20px;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
@@ -10,15 +12,21 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  padding-bottom: 23px;
 }
 
 .form-name__item {
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 10px;
+  justify-content: space-between;
+  margin-bottom: 21px;
+}
+
+.form-name__item:last-child {
+  margin-bottom: 0;
 }
 
 .form-name__input {
+  font-family: inherit;
   display: block;
   box-sizing: border-box;
   width: 230px;
@@ -40,9 +48,67 @@
   width: 194px;
 }
 
+.form-name__input::placeholder {
+  color: #000000;
+}
+
 .form-name__label {
   line-height: 26px;
   color: #333333;
   text-transform: uppercase;
   align-self: center;
+}
+
+@media (min-width: $tablet-width) {
+  .form-name__heading {
+    font-size: 21px;
+    text-align: left;
+    padding-left: 55px;
+    margin-bottom: 56px;
+  }
+
+  .form-name__list {
+    padding-bottom: 0;
+  }
+
+  .form-name__item {
+    margin-bottom: 20px;
+  }
+
+  .form-name__label {
+    padding-left: 55px;
+    margin-right: 10px;
+  }
+
+  .form-name__item:nth-child(1) .form-name__input {
+    width: 216px;
+  }
+
+  .form-name__item:nth-child(2) .form-name__input {
+    width: 178px;
+  }
+
+  .form-name__item:nth-child(3) .form-name__input {
+    width: 180px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .form-name__heading {
+    padding-left: 77px;
+  }
+
+  .form-name__item {
+    justify-content: flex-start;
+  }
+
+  .form-name__input {
+    flex-grow: 1;
+  }
+
+  .form-name__label {
+    padding-left: 77px;
+    margin-right: 18px;
+  }
 }

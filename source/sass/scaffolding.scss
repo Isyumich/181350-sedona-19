@@ -29,6 +29,7 @@ a {
 }
 
 .button {
+  font-family: inherit;
   display: block;
   height: 58px;
   width: 280px;
@@ -66,5 +67,9 @@ a {
   .container {
     width: 1200px;
     background-color: #ffffff;
+  }
+
+  .screen-no-desktop {
+    display: none;
   }
 }
