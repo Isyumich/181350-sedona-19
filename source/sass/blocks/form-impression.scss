@@ -58,6 +58,7 @@
     text-align: left;
     font-size: 21px;
     margin-bottom: 73px;
+    padding: 18px 0 0 0;
   }
 
   .form-impression__list {
@@ -78,8 +79,13 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
+  .form-impression {
+    box-sizing: border-box;
+    padding-left: 0.5%;
+  }
+
   .form-impression__heading {
-    padding-left: 80px;
+    padding-left: 75px;
   }
 }

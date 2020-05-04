@@ -59,7 +59,7 @@
 
 @media (min-width: $tablet-width) {
   .feedback {
-    padding-bottom: 60px;
+    padding-bottom: 61px;
   }
 
   .feedback__heading {
@@ -68,7 +68,7 @@
   }
 
   .feedback__description {
-    padding-left: 21.5%;
+    padding-left: 21%;
     padding-right: 21.5%;
     border: none;
     padding-top: 32px;
@@ -79,7 +79,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    padding-left: 8%;
+    padding-left: 7.5%;
     padding-right: 8%;
   }
 
@@ -129,9 +129,10 @@
   }
 
   .feedback__button {
+    padding: 0;
     width: 324px;
     margin: 0;
-    margin-right: 162px;
+    margin-right: 166px;
   }
 
   .feedback__annotation {
@@ -183,6 +184,10 @@
 
   .feedback__button {
     width: 480px;
-    margin-right: 317px;
+    margin-right: 321px;
+  }
+
+  .feedback__annotation {
+    padding-top: 17px;
   }
 }

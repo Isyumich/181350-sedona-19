@@ -63,7 +63,7 @@
   .form-name__heading {
     font-size: 21px;
     text-align: left;
-    padding-left: 55px;
+    padding: 18px 0 0 57px;
     margin-bottom: 56px;
   }
 
@@ -76,7 +76,8 @@
   }
 
   .form-name__label {
-    padding-left: 55px;
+    padding-left: 59px;
+    padding-top: 3px;
     margin-right: 10px;
   }
 
@@ -96,7 +97,7 @@
 
 @media (min-width: $desktop-width) {
   .form-name__heading {
-    padding-left: 77px;
+    padding-left: 80px;
   }
 
   .form-name__item {
@@ -105,10 +106,11 @@
 
   .form-name__input {
     flex-grow: 1;
+    padding-left: 19px;
   }
 
   .form-name__label {
-    padding-left: 77px;
+    padding-left: 80px;
     margin-right: 18px;
   }
 }
