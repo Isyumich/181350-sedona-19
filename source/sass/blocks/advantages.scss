@@ -385,6 +385,16 @@
     min-width: 33.33%;
   }
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .advantages__item:nth-child(1) {
+      background-image: url("../img/main-city-desktop@2x.jpg");
+    }
+
+    .advantages__item:nth-child(3) {
+      background-image: url("../img/main-bridge-desktop@2x.jpg");
+    }
+  }
+
   .advantages__item-wrapper-text {
     width: 400px;
   }

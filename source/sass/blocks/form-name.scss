@@ -38,6 +38,17 @@
   color: #000000;
   padding-left: 20px;
   background-color: #f2f2f2;
+  outline: none;
+}
+
+.form-name__input:hover {
+  background-color: #e5e5e5;
+}
+
+.form-name__input:active,
+.form-name__input:focus {
+  background-color: #ffffff;
+  border: solid 4px #e5e5e5;
 }
 
 .form-name__item:nth-child(2) .form-name__input {

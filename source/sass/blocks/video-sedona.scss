@@ -102,7 +102,22 @@
 .video-sedona__replay-image,
 .video-sedona__subtitles-image,
 .video-sedona__fullscreen-image {
-  fill: #454545;
+  fill: #5c6870;
+}
+
+.video-sedona__replay-image:hover,
+.video-sedona__subtitles-image:hover,
+.video-sedona__fullscreen-image:hover,
+.video-sedona__replay-image:focus,
+.video-sedona__subtitles-image:focus,
+.video-sedona__fullscreen-image:focus {
+  fill: #333333;
+}
+
+.video-sedona__replay-image:active,
+.video-sedona__subtitles-image:active,
+.video-sedona__fullscreen-image:active {
+  fill: rgba(51, 51, 51, 0.3);
 }
 
 @media (min-width: $tablet-width) {
@@ -172,6 +187,21 @@
   .video-sedona__subtitles-image,
   .video-sedona__fullscreen-image {
     fill: #ffffff;
+  }
+
+  .video-sedona__replay-image:hover,
+  .video-sedona__subtitles-image:hover,
+  .video-sedona__fullscreen-image:hover,
+  .video-sedona__replay-image:focus,
+  .video-sedona__subtitles-image:focus,
+  .video-sedona__fullscreen-image:focus {
+    fill: rgba(255, 255, 255, 0.6);
+  }
+
+  .video-sedona__replay-image:active,
+  .video-sedona__subtitles-image:active,
+  .video-sedona__fullscreen-image:active {
+    fill: rgba(255, 255, 255, 0.3);
   }
 }
 
