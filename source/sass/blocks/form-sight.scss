@@ -43,6 +43,16 @@
   background-color: #f2f2f2;
   position: absolute;
   transform: translateY(-25%);
+  box-sizing: border-box;
+}
+
+.form-sight__input:hover + .form-sight__label::before,
+.form-sight__input:focus + .form-sight__label::before {
+  background-color: #e5e5e5;
+}
+
+.form-sight__input:active + .form-sight__label::before {
+  background-color: #d5d5d5;
 }
 
 .form-sight__input:checked + .form-sight__label::before {
@@ -50,6 +60,10 @@
   background-repeat: no-repeat;
   background-size: 24px 16px;
   background-position: center center;
+}
+
+.form-sight__input:checked:active + .form-sight__label::before {
+  background-image: url("../img/icon-tick-active.svg");
 }
 
 @media (min-width: $tablet-width) {

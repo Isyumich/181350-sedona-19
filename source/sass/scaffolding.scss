@@ -44,6 +44,21 @@ a {
   border: none;
 }
 
+.button:hover,
+.button:focus {
+  background-color: #669ec0;
+  outline: none;
+}
+
+.button:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button:disabled {
+  background-color: #e5e5e5;
+}
+
 @media (min-width: $tablet-width) {
   .container {
     min-width: 768px;

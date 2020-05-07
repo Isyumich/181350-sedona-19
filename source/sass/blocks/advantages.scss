@@ -14,7 +14,7 @@
 
 .advantages__description {
   margin: 0;
-  padding: 28px 3% 27px 3%;
+  padding: 28px 3% 4px 3%;
   text-align: center;
 
   color: #333333;
@@ -57,6 +57,10 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+}
+
+.advantages__item:nth-child(1) .advantages__item-heading {
+  padding-top: 22px;
 }
 
 .advantages__item-number,
@@ -160,22 +164,33 @@
     position: relative;
   }
 
-  .advantages__item:nth-child(1),
+  .advantages__item:nth-child(1) {
+    min-height: 435px;
+    background-image:
+      url("../img/main-city-mobile@1x.jpg"),
+      url("../img/bg-triangle.svg");
+    background-size:
+      100% 260px,
+      auto;
+    background-repeat: no-repeat;
+    background-position:
+      bottom,
+      top;
+  }
+
   .advantages__item:nth-child(3) {
-    padding-bottom: 260px;
-    background-image: url("../img/main-city-mobile@1x.jpg");
+    min-height: 412px;
+    background-image: url("../img/main-bridge-mobile@1x.jpg");
     background-size: 320px 260px;
     background-repeat: no-repeat;
     background-position: bottom;
   }
 
-  .advantages__item:nth-child(3) {
-    background-image: url("../img/main-bridge-mobile@1x.jpg");
-  }
-
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     .advantages__item:nth-child(1) {
-      background-image: url("../img/main-city-mobile@2x.jpg");
+      background-image:
+        url("../img/main-city-mobile@2x.jpg"),
+        url("../img/bg-triangle.svg");
     }
 
     .advantages__item:nth-child(3) {
@@ -283,6 +298,10 @@
     margin-bottom: 10px;
   }
 
+  .advantages__item:nth-child(1) .advantages__item-heading {
+    padding-top: 45px;
+  }
+
   .advantages__item-description {
     padding-right: 18%;
     padding-left: 18%;
@@ -383,6 +402,16 @@
 
   .advantages__item:nth-child(n+4) {
     min-width: 33.33%;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .advantages__item:nth-child(1) {
+      background-image: url("../img/main-city-desktop@2x.jpg");
+    }
+
+    .advantages__item:nth-child(3) {
+      background-image: url("../img/main-bridge-desktop@2x.jpg");
+    }
   }
 
   .advantages__item-wrapper-text {

@@ -15,3 +15,12 @@
   width: 40px;
   height: 40px;
 }
+
+.copyright__link:hover .copyright__link-image,
+.copyright__link:focus .copyright__link-image {
+  fill: #81b3d2;
+}
+
+.copyright__link:active .copyright__link-image {
+  fill: rgba(0, 0, 0, 0.3);
+}

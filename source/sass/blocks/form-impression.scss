@@ -49,8 +49,23 @@
   left: 1.5%;
 }
 
+.form-impression__input:hover + .form-impression__label::before,
+.form-impression__input:focus + .form-impression__label::before {
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
+}
+
+.form-impression__input:active + .form-impression__label::before {
+  background-color: #d5d5d5;
+  border-color: #d5d5d5;
+}
+
 .form-impression__input:checked + .form-impression__label::before {
   background-color: #333333;
+}
+
+.form-impression__input:checked:active + .form-impression__label::before {
+  background-color: rgba(51, 51, 51, 0.3);
 }
 
 @media (min-width: $tablet-width) {
