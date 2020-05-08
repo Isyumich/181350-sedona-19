@@ -9,8 +9,8 @@ var navList = document.querySelector(".main-nav__list");
 var pageHeaderImage = document.querySelector(".page-header__image");
 
 window.onload = function() {
-   navList.classList.add("main-nav__list--hidden");
-   toggle.classList.add("main-nav__toggle--on")
+    navList.classList.add("main-nav__list--hidden");
+    toggle.classList.add("main-nav__toggle--on");
 };
 
 toggle.addEventListener("click", function (evt) {
