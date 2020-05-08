@@ -8,14 +8,19 @@ var navList = document.querySelector(".main-nav__list");
 
 var pageHeaderImage = document.querySelector(".page-header__image");
 
+window.onload = function() {
+   navList.classList.add("main-nav__list--hidden");
+   toggle.classList.add("main-nav__toggle--on")
+};
+
 toggle.addEventListener("click", function (evt) {
   evt.preventDefault();
-  if (navList.classList.contains("main-nav__list--open")) {
-    navList.classList.remove("main-nav__list--open");
+  if (navList.classList.contains("main-nav__list--hidden")) {
+    navList.classList.remove("main-nav__list--hidden");
     toggle.classList.remove("main-nav__toggle--on");
     toggle.classList.add("main-nav__toggle--off");
   } else {
-    navList.classList.add("main-nav__list--open");
+    navList.classList.add("main-nav__list--hidden");
     toggle.classList.remove("main-nav__toggle--off");
     toggle.classList.add("main-nav__toggle--on");
   }
