@@ -1,6 +1,7 @@
 .form-contacts__heading {
   font-size: 18px;
   line-height: 26px;
+  padding: 0;
   padding-top: 20px;
   margin-bottom: 20px;
   font-weight: bold;
@@ -77,6 +78,8 @@
     font-size: 21px;
     position: relative;
     margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .form-contacts__heading::before {
@@ -116,7 +119,7 @@
 
 @media (min-width: $desktop-width) {
   .form-contacts__heading {
-    margin-bottom: 72px;
+    margin-bottom: 73px;
   }
 
   .form-contacts__heading::before {

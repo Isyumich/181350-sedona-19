@@ -28,6 +28,7 @@
 }
 
 .form-sight__label {
+  display: block;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -42,7 +43,7 @@
   height: 55px;
   background-color: #f2f2f2;
   position: absolute;
-  transform: translateY(-25%);
+  transform: translate(-80px, -25%);
   box-sizing: border-box;
 }
 
@@ -105,7 +106,7 @@
 
   .form-sight__item {
     width: 44%;
-    margin-bottom: 60px;
+    margin-bottom: 62px;
   }
 
   .form-sight__item:nth-last-child(1),
@@ -114,7 +115,7 @@
   }
 
   .form-sight__label {
-    padding-left: 82px;
+    padding-left: 81px;
   }
 }
 
@@ -123,6 +124,7 @@
     padding-left: 30%;
     padding-right: 30%;
     padding-top: 22px;
+    margin-bottom: 54px;
   }
 
   .form-sight__heading::before {
@@ -149,10 +151,18 @@
   }
 
   .form-sight__item:nth-child(4n+3) {
-    max-width: 24.5%;
+    max-width: 25%;
   }
 
   .form-sight__item:nth-child(4n) {
-    max-width: 14%;
+    max-width: 21%;
+  }
+
+  .form-sight__label {
+    padding-left: 80px;
+  }
+
+  .form-sight__label::before {
+    transform: translate(-80px, -25%);
   }
 }
