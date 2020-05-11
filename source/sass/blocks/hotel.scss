@@ -28,14 +28,23 @@
   margin-right: auto;
 }
 
-.hotel__map {
+.hotel__map-container {
   width: 100%;
   position: relative;
+  height: 350px;
+}
+
+.hotel__google-map {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
 }
 
 .hotel__map-image {
   display: block;
   width: 100%;
+  position: absolute;
 }
 
 .hotel__map-marker {
