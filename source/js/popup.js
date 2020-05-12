@@ -10,7 +10,7 @@ var successButton = document.querySelector(".modal-success__button");
 
 var inputRequired = document.querySelector("input[required]");
 
-button.addEventListener("click", function (evt) {
+button.addEventListener("click", function(evt) {
   evt.preventDefault();
   if (inputRequired.value == '') {
     errorBlock.classList.add("feedback__modal-error--active");
