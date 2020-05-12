@@ -1,6 +1,7 @@
 .form-contacts__heading {
   font-size: 18px;
   line-height: 26px;
+  margin: 0;
   padding: 0;
   padding-top: 20px;
   margin-bottom: 20px;
@@ -62,6 +63,7 @@
 
 .form-contacts__input::placeholder {
   color: #000000;
+  opacity: 1;
 }
 
 .form-contacts__label {

@@ -50,8 +50,8 @@
     <h1 class="feedback__heading">Оставьте свой отзыв</h1>
     <p class="feedback__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     <form class="feedback__form" action="https://echo.htmlacademy.ru" method="get">
-      <fieldset class="feedback__item form-name">
-        <legend class="form-name__heading">Представьтесь:</legend>
+      <section class="feedback__item form-name">
+        <h3 class="form-name__heading">Представьтесь:</h3>
         <ul class="form-name__list">
           <li class="form-name__item">
             <label class="form-name__label" for="first-name">Имя*:</label>
@@ -66,9 +66,9 @@
             <input class="form-name__input" type="text" name="first-name" placeholder="Александрович" id="middle-name">
           </li>
         </ul>
-      </fieldset>
-      <fieldset class="feedback__item form-contacts">
-        <legend class="form-contacts__heading">Контактная информация:</legend>
+      </section>
+      <section class="feedback__item form-contacts">
+        <h3 class="form-contacts__heading">Контактная информация:</h3>
         <ul class="form-contacts__list">
           <li class="form-contacts__item">
             <label class="form-contacts__label" for="phone-number"><span class="screen-no-desktop">Контактный</span> телефон*:</label>
@@ -79,9 +79,9 @@
             <input class="form-contacts__input" type="email" name="email" placeholder="Введите e-mail" id="email" required>
           </li>
         </ul>
-      </fieldset>
-      <fieldset class="feedback__item form-impression">
-        <legend class="form-impression__heading">Ваше общее впечатление:</legend>
+      </section>
+      <section class="feedback__item form-impression">
+        <h3 class="form-impression__heading">Ваше общее впечатление:</h3>
         <ul class="form-impression__list">
           <li class="form-impression__item">
             <input class="form-impression__input" type="radio" name="positive" checked id="positive">
@@ -96,9 +96,9 @@
             <label class="form-impression__label" for="neutral">Затрудняюсь ответить</label>
           </li>
         </ul>
-      </fieldset>
-      <fieldset class="feedback__item form-sight">
-        <legend class="form-sight__heading">Посещенные достопримечательности:</legend>
+      </section>
+      <section class="feedback__item form-sight">
+        <h3 class="form-sight__heading">Посещенные достопримечательности:</h3>
         <ul class="form-sight__list">
           <li class="form-sight__item">
             <input class="form-sight__input" type="checkbox" name="devil's bridge" id="devil's-bridge">
@@ -117,14 +117,14 @@
             <label class="form-sight__label" for="red-rocks">Красные скалы</label>
           </li>
         </ul>
-      </fieldset>
-      <fieldset class="feedback__item form-emotions">
-        <legend class="form-emotions__heading">Опишите свои эмоции:</legend>
+      </section>
+      <section class="feedback__item form-emotions">
+        <h3 class="form-emotions__heading">Опишите свои эмоции:</h3>
         <p class="form-emotions__item">
           <textarea class="form-emotions__text" name="emotions" placeholder="Опишите подробно все свои восторги" id="emotions"></textarea>
           <label class="form-emotions__label" for="emotions"></label>
         </p>
-      </fieldset>
+      </section>
       <button class="feedback__button button" type="submit">Отправить отзыв</button>
       <p class="feedback__annotation screen-media-only">* &ndash; обязательные поля</p>
     </form>

@@ -1,6 +1,8 @@
 .form-emotions__heading {
   font-size: 18px;
   line-height: 26px;
+  margin: 0;
+  padding: 0;
   padding-top: 15px;
   margin-bottom: 5px;
   font-weight: bold;
@@ -9,6 +11,8 @@
 }
 
 .form-emotions__text {
+  font-family: "PTSans", "Arial", sans-serif;
+  color: #000000;
   display: block;
   box-sizing: border-box;
   overflow: auto;
@@ -16,13 +20,18 @@
   resize: vertical;
   padding: 0;
   padding-left: 21px;
-  padding-top: 22px;
+  padding-top: 16px;
   border: none;
   min-height: 160px;
   background-color: #f2f2f2;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
+  opacity: 1;
+}
+
+.form-emotions__text::placeholder {
+  color: #000000;
   opacity: 1;
 }
 
