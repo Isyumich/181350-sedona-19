@@ -46,19 +46,19 @@
   background-color: #f2f2f2;
   border-radius: 50%;
   position: absolute;
-  transform: translateY(-20%);
-  left: 1.5%;
+  left: 1%;
+  top: -60%;
 }
 
 .form-impression__label::after {
   display: none;
   content: "";
-  width: 22px;
-  height: 22px;
+  width: 21px;
+  height: 21px;
   background-color: #333333;
   border-radius: 50%;
   position: absolute;
-  top: 10%;
+  top: 11%;
   left: 7%;
 }
 
@@ -102,7 +102,6 @@
   }
 
   .form-impression__label::before {
-    transform: translateY(-25%);
     left: 0;
   }
 }

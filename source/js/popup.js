@@ -1,8 +1,8 @@
 var button = document.querySelector(".feedback__button");
 
-errorBlock = document.querySelector(".feedback__modal-error");
+var errorBlock = document.querySelector(".feedback__modal-error");
 
-successBlock = document.querySelector(".feedback__modal-success");
+var successBlock = document.querySelector(".feedback__modal-success");
 
 var errorButton = document.querySelector(".modal-error__button");
 
