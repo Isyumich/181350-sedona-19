@@ -51,7 +51,7 @@
     height: 1px;
     background-color: #f2f2f2;
     position: absolute;
-    left: -80%;
+    left: 0;
     top: 65%;
   }
 
@@ -62,7 +62,7 @@
     height: 1px;
     background-color: #f2f2f2;
     position: absolute;
-    left: 130%;
+    left: 81%;
     top: 65%;
   }
 }
@@ -74,13 +74,13 @@
 
   .form-emotions__heading::before {
     width: 283px;
-    left: -140%;
+    left: 0;
     top: 65%;
   }
 
   .form-emotions__heading::after {
     width: 283px;
-    left: 130%;
+    left: 70.5%;
     top: 65%;
   }
 }

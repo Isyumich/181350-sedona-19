@@ -1,13 +1,8 @@
 var button = document.querySelector(".feedback__button");
-
 var errorBlock = document.querySelector(".feedback__modal-error");
-
 var successBlock = document.querySelector(".feedback__modal-success");
-
 var errorButton = document.querySelector(".modal-error__button");
-
 var successButton = document.querySelector(".modal-success__button");
-
 var inputRequired = document.querySelector("input[required]");
 
 button.addEventListener("click", function(evt) {
