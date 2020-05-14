@@ -59,11 +59,11 @@
           </li>
           <li class="form-name__item">
             <label class="form-name__label" for="last-name">Фамилия*:</label>
-            <input class="form-name__input" type="text" name="first-name" placeholder="Иванов" id="last-name" required>
+            <input class="form-name__input" type="text" name="last-name" placeholder="Иванов" id="last-name" required>
           </li>
           <li class="form-name__item">
             <label class="form-name__label" for="middle-name">Отчество:</label>
-            <input class="form-name__input" type="text" name="first-name" placeholder="Александрович" id="middle-name">
+            <input class="form-name__input" type="text" name="middle-name" placeholder="Александрович" id="middle-name">
           </li>
         </ul>
       </section>
@@ -72,7 +72,7 @@
         <ul class="form-contacts__list">
           <li class="form-contacts__item">
             <label class="form-contacts__label" for="phone-number"><span class="screen-no-desktop">Контактный</span> телефон*:</label>
-            <input class="form-contacts__input" type="tel" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" name="phone-number" placeholder="Введите телефон" id="phone-number" required>
+            <input class="form-contacts__input" type="tel" pattern="\+[0-9]{11}" title="В формате: +***********, где *-любая цифра" name="phone-number" placeholder="Введите телефон" id="phone-number" required>
           </li>
           <li class="form-contacts__item">
             <label class="form-contacts__label" for="email">Электронная почта*:</label>

@@ -3,13 +3,16 @@ var errorBlock = document.querySelector(".feedback__modal-error");
 var successBlock = document.querySelector(".feedback__modal-success");
 var errorButton = document.querySelector(".modal-error__button");
 var successButton = document.querySelector(".modal-success__button");
-var inputRequired = document.querySelector("input[required]");
+var userName = document.querySelector("#first-name");
+var userSurname = document.querySelector("#last-name");
+var usertel = document.querySelector("#phone-number");
+var usermail = document.querySelector("#email");
 
 button.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  if (inputRequired.value == '') {
+  if (!userName.value || !userSurname.value || !usertel.value || !usermail.value) {
     errorBlock.classList.add("feedback__modal-error--active");
   } else {
+    evt.preventDefault();
     successBlock.classList.add("feedback__modal-success--active");
   }
 });
