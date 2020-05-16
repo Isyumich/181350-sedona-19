@@ -42,6 +42,8 @@
 .photo-item__likes-image {
   opacity: 0.3;
   padding-top: 6px;
+  min-width: 22px;
+  min-height: 20px;
 }
 
 @media (min-width: $tablet-width) {

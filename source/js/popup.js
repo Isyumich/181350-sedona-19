@@ -1,20 +1,18 @@
 var button = document.querySelector(".feedback__button");
-
-errorBlock = document.querySelector(".feedback__modal-error");
-
-successBlock = document.querySelector(".feedback__modal-success");
-
+var errorBlock = document.querySelector(".feedback__modal-error");
+var successBlock = document.querySelector(".feedback__modal-success");
 var errorButton = document.querySelector(".modal-error__button");
-
 var successButton = document.querySelector(".modal-success__button");
+var userName = document.querySelector("#first-name");
+var userSurname = document.querySelector("#last-name");
+var usertel = document.querySelector("#phone-number");
+var usermail = document.querySelector("#email");
 
-var inputRequired = document.querySelector("input[required]");
-
-button.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  if (inputRequired.value == '') {
+button.addEventListener("click", function(evt) {
+  if (!userName.value || !userSurname.value || !usertel.value || !usermail.value) {
     errorBlock.classList.add("feedback__modal-error--active");
   } else {
+    evt.preventDefault();
     successBlock.classList.add("feedback__modal-success--active");
   }
 });

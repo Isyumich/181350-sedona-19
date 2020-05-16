@@ -88,6 +88,8 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  max-height: 41px;
+  outline: none;
 }
 
 .video-sedona__replay {
@@ -101,6 +103,7 @@
 
 .video-sedona__image {
   fill: #5c6870;
+  outline: none;
 }
 
 .video-sedona__image:hover,
