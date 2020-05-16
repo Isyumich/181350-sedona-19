@@ -25,11 +25,6 @@
   margin-bottom: 0;
 }
 
-.form-impression__input {
-  display: none;
-}
-
-
 .form-impression__label {
   font-size: 18px;
   line-height: 26px;
@@ -65,12 +60,10 @@
 .form-impression__input:hover + .form-impression__label::before,
 .form-impression__input:focus + .form-impression__label::before {
   background-color: #e5e5e5;
-  border-color: #e5e5e5;
 }
 
 .form-impression__input:active + .form-impression__label::before {
   background-color: #d5d5d5;
-  border-color: #d5d5d5;
 }
 
 .form-impression__input:checked + .form-impression__label::after {

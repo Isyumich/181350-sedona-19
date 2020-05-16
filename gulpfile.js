@@ -8,15 +8,15 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var csso = require("gulp-csso");
 var rename = require("gulp-rename");
-var imagemin = require('gulp-imagemin');
+var imagemin = require("gulp-imagemin");
 var server = require("browser-sync").create();
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
-var htmlmin = require('gulp-htmlmin');
-var uglify = require('gulp-uglify');
+var htmlmin = require("gulp-htmlmin");
+var uglify = require("gulp-uglify");
 var svgSprite = require("gulp-svg-sprite");
 var cheerio = require("gulp-cheerio");
 
@@ -58,7 +58,7 @@ gulp.task("sprite", function() {
   return gulp.src("source/img/icon-*.svg")
     .pipe(cheerio({
       run: function($) {
-        $('[fill]').removeAttr('fill');
+        $("[fill]").removeAttr("fill");
       },
       parserOptions: {
         xmlMode: true
@@ -110,7 +110,7 @@ gulp.task("copy", function() {
     .pipe(gulp.dest("build"));
 });
 
-gulp.task('compress-js', function() {
+gulp.task("compress-js", function() {
   return gulp.src("source/js/**/*.js")
     .pipe(uglify())
     .pipe(rename(function(path) {
