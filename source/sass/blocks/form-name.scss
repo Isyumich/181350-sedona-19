@@ -51,7 +51,7 @@
 .form-name__input:focus {
   background-color: #ffffff;
   border: solid 4px #e5e5e5;
-  padding-left: 15px;
+  padding-left: 16px;
 }
 
 .form-name__item:nth-child(2) .form-name__input {
@@ -90,12 +90,6 @@
     margin-bottom: 20px;
   }
 
-  .form-name__label {
-    padding-left: 59px;
-    padding-top: 3px;
-    margin-right: 10px;
-  }
-
   .form-name__item:nth-child(1) .form-name__input {
     width: 216px;
   }
@@ -106,6 +100,12 @@
 
   .form-name__item:nth-child(3) .form-name__input {
     width: 180px;
+  }
+
+  .form-name__label {
+    padding-left: 59px;
+    padding-top: 3px;
+    margin-right: 10px;
   }
 }
 
@@ -122,6 +122,11 @@
   .form-name__input {
     flex-grow: 1;
     padding-left: 19px;
+  }
+
+  .form-name__input:active,
+  .form-name__input:focus {
+    padding-left: 15px;
   }
 
   .form-name__label {
